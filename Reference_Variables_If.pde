@@ -1,24 +1,28 @@
-//integers
-int X= 50;
-int Y= 50;
-int bounce= -5;
+//integer
 
-//setup
-void setup() {
-  size(200,200);
+int X=50;
+int Y=50;
+int bounce= 1; 
+
+//set stuff up
+void setup(){
+  size(300,300);
 }
 
-//draw
-void draw() {
-  background(75,random(255),random(255),random(255));
+//more stuff
+void draw(){
+  background(#4CCFFC);
   rect(X,Y,100,100);
-
-//movement
+  fill(#006CED);
+  ellipse(X,Y,100,100);
+  
+//make movement
  X=X+bounce;
  
-//set limits
- if(X>width-100 || X<0)
- {
-   bounce=bounce*(-1);
- }
-}
+//sets a limit
+  if(X>width-100 || X<0)
+  {
+    bounce=bounce*(-1);
+  }
+
+fill(#6FF22E);
